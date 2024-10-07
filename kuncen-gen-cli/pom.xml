@@ -3,8 +3,8 @@
          xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
     <modelVersion>4.0.0</modelVersion>
 
-    <groupId>mpuss</groupId>
-    <artifactId>kuncen-generator</artifactId>
+    <groupId>ms.refactored</groupId>
+    <artifactId>kuncen-gen-cli</artifactId>
     <version>1.0</version>
 
     <properties>
@@ -12,6 +12,14 @@
         <maven.compiler.release>22</maven.compiler.release>
     </properties>
 
+    <dependencies>
+        <dependency>
+            <groupId>ms.refactored</groupId>
+            <artifactId>kuncen-gen-api</artifactId>
+            <version>1.0</version>
+        </dependency>
+    </dependencies>
+    
     <build>
         <pluginManagement>
             <plugins>
@@ -22,4 +30,5 @@
             </plugins>
         </pluginManagement>
     </build>
+    
 </project>
